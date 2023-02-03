@@ -1,0 +1,9 @@
+{
+  "platform": "netcore",
+  "netcore": {
+    "version": "6.0",
+    "finalDllName": "apitest",
+    "csprojectFile": "apitest/apitest.csproj"
+  },
+  "port": 80
+}
