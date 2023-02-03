@@ -13,6 +13,12 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
+        builder.WebHost
+        .UseUrls("http://0.0.0.0:80/")
+        .UseKestrel()
+        .UseContentRoot(Directory.GetCurrentDirectory())
+        .UseIISIntegration();
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
